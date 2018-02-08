@@ -39,6 +39,7 @@ main(void)
   userinit();      // first user process
   // Finish setting up this processor in mpmain.
   mpmain();
+  
 }
 
 // Other CPUs jump here from entryother.S.
@@ -56,6 +57,9 @@ static void
 mpmain(void)
 {
   cprintf("cpu%d: starting\n", cpu->id);
+  if(cpu->id == 1){
+  	cprintf("CS550 proj0 printing in kernel space\n");
+  }
   idtinit();       // load idt register
   xchg(&cpu->started, 1); // tell startothers() we're up
   scheduler();     // start running processes
