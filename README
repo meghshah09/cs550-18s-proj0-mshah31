@@ -2,7 +2,7 @@ CS:550 Operating System Project 1 (Warm-Up)
 --> Getting Familiar with xv6 system Call.
 --> Adding a USer Level Program (proj0)
 --> Printing a message in kernel space.
-
+(FOR DETAILED DESCRIPTION PLEASE READ FILE cs550-18s-proj0.pdf)
 
 
 xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
